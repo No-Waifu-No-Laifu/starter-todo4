@@ -13,3 +13,10 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ### Version 0.X - GL, SM
 Release Date: 10.12.17
 
+##### New Components
+    - controllers     
+        - N/A
+    - model     
+        - Added Tasks.php
+    - view
+        - N/A
