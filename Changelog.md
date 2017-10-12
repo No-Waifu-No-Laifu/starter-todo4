@@ -20,3 +20,11 @@ Release Date: 10.12.17
         - Added Tasks.php
     - view
         - N/A
+
+##### Updated components
+    - controllers     
+        - Updated Welcome.php
+    - model     
+        - N/A
+    - view
+        - Updated homepage.php
