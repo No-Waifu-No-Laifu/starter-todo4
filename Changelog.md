@@ -15,16 +15,21 @@ Release Date: 10.12.17
 
 ##### New Components
     - controllers     
-        - N/A
+        - Views
     - model     
         - Added Tasks.php
     - view
-        - N/A
+        - by_priority
+        - by_category
 
 ##### Updated components
     - controllers     
         - Updated Welcome.php
+        - MY_Controller - fixed bug
+        - 
     - model     
         - N/A
     - view
         - Updated homepage.php
+    - others
+        - config - Changed link routing for work link
