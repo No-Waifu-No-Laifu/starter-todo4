@@ -10,17 +10,21 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 
 ## Version Log
-### Version 0.X - GL, SM
+### Version 1.0 - GL, SM
 Release Date: 10.12.17
 
 ##### New Components
     - controllers     
         - Views
+        - Helpme
     - model     
         - Added Tasks.php
     - view
         - by_priority
         - by_category
+    - others
+        - data/jobs.md
+        - imported liraries/Parsdown.php
 
 ##### Updated components
     - controllers     
@@ -33,3 +37,5 @@ Release Date: 10.12.17
         - Updated homepage.php
     - others
         - config - Changed link routing for work link
+                 - Changed link to route Help Wanted link
+        - autoload - Added reference to load Parsedown library
