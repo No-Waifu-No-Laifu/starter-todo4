@@ -20,22 +20,28 @@ Release Date: 10.19.17
     - model     
         - N/A
     - view
-        - itemlist
-        - oneitem
+        - itemlist - displays lists on oneitem
+        - oneitem - displays one row
+        - oneitemx - displays editable row
 	- itemnav
+        - itemadd - displays add entries button
+
     - others
         - N/A
 
 ##### Updated components
     - controllers
-        - Mtce - Shows role on pagetitle, added pagination
-	- View - updated makePrioritizedPanel(), created complete()
+        - Mtce - Shows role on pagetitle
+               - Added pagination
+               - Added framework for Adding/Editing entries
+	      - View - updated makePrioritizedPanel() 
+               - created complete()
     - model     
         - N/A
     - view
         - _menubar - added role selector
-	- itemlist - added pagination tag
-	- by_priority - added form tag
+	      - itemlist - added pagination tag
+	      - by_priority - added form tag
     - others
         - autoload - enabled sessions
         - config - Changed link routing for Maintenance
