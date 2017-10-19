@@ -25,7 +25,11 @@ Release Date: 10.19.17
         - oneitemx - displays editable row
 	- itemnav - displays page navigation
         - itemadd - displays add entries button
+<<<<<<< HEAD
 	- itemedit - displays items worked with
+=======
+
+>>>>>>> e242784d5917f739b0e0ff71bb2fdba618db4359
     - others
         - N/A
 
@@ -34,9 +38,12 @@ Release Date: 10.19.17
         - Mtce - Shows role on pagetitle
                - Added pagination
                - Added framework for Adding/Editing entries
+<<<<<<< HEAD
 	       - Added add, edit, showit, submit cancel and delete functions
-	       - View - updated makePrioritizedPanel() 
+=======
+	      - View - updated makePrioritizedPanel() 
                - created complete()
+>>>>>>> e242784d5917f739b0e0ff71bb2fdba618db4359
     - model     
         - Tasks - Added rules for validation
     - view
@@ -48,8 +55,11 @@ Release Date: 10.19.17
         - config - Changed link routing for Maintenance
                  - Session path set
         - constants - Added application constants
+<<<<<<< HEAD
 	- Memory_model - updated highest function
+=======
 	- updated core/Memory_Model
+>>>>>>> e242784d5917f739b0e0ff71bb2fdba618db4359
         
 
 ##### Bugfixes
