@@ -22,16 +22,18 @@ Release Date: 10.19.17
     - view
         - itemlist
         - oneitem
+	- itemnav
     - others
         - N/A
 
 ##### Updated components
     - controllers
-        - Mtce - Shows role on pagetitle
+        - Mtce - Shows role on pagetitle, added pagination
     - model     
         - N/A
     - view
         - _menubar - added role selector
+	- itemlist - added pagination tag
     - others
         - autoload - enabled sessions
         - config - Changed link routing for Maintenance
