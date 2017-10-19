@@ -20,14 +20,17 @@ Release Date: 10.19.17
     - model     
         - N/A
     - view
-        - itemlist
-        - oneitem
+        - itemlist - displays lists on oneitem
+        - oneitem - displays one row
+        - oneitemx - displays editable row
+        - itemadd - displays add entries button
     - others
         - N/A
 
 ##### Updated components
     - controllers
         - Mtce - Shows role on pagetitle
+               - Added framework for Adding/Editing entries
     - model     
         - N/A
     - view
