@@ -25,6 +25,7 @@ Release Date: 10.19.17
         - oneitemx - displays editable row
 	- itemnav
         - itemadd - displays add entries button
+
     - others
         - N/A
 
@@ -33,16 +34,20 @@ Release Date: 10.19.17
         - Mtce - Shows role on pagetitle
                - Added pagination
                - Added framework for Adding/Editing entries
+	      - View - updated makePrioritizedPanel() 
+               - created complete()
     - model     
         - N/A
     - view
         - _menubar - added role selector
-	- itemlist - added pagination tag
+	      - itemlist - added pagination tag
+	      - by_priority - added form tag
     - others
         - autoload - enabled sessions
         - config - Changed link routing for Maintenance
                  - Session path set
         - constants - Added application constants
+	- updated core/Memory_Model
         
 
 ##### Bugfixes
