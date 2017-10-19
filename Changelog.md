@@ -16,6 +16,7 @@ Release Date: 10.19.17
 ##### New Components
     - controllers     
         - Mtce - Maintenance controller
+        - Roles
     - model     
         - N/A
     - view
@@ -26,13 +27,17 @@ Release Date: 10.19.17
 
 ##### Updated components
     - controllers
-        - N/A    
+        - Mtce - Shows role on pagetitle
     - model     
         - N/A
     - view
-        - N/A
+        - _menubar - added role selector
     - others
+        - autoload - enabled sessions
         - config - Changed link routing for Maintenance
+                 - Session path set
+        - constants - Added application constants
+        
 
 ##### Bugfixes
     - controllers
