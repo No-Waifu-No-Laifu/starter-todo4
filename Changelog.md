@@ -10,6 +10,30 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 
 
 ## Version Log
+### Version 2.0 - GL, SM
+Release Date: 10.19.17
+
+##### New Components
+    - controllers     
+        - Mtce - Maintenance controller
+    - model     
+        - N/A
+    - view
+        - itemlist
+        - oneitem
+    - others
+        - N/A
+
+##### Updated components
+    - controllers
+        - N/A    
+    - model     
+        - N/A
+    - view
+        - N/A
+    - others
+        - config - Changed link routing for Maintenance
+
 ### Version 1.0 - GL, SM
 Release Date: 10.12.17
 
