@@ -3,6 +3,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
 |--------------------------------------------------------------------------
+| Application Defined
+|--------------------------------------------------------------------------
+|
+| These are the defined constants used throughout the application
+|
+*/
+defined('ROLE_GUEST') OR define('ROLE_GUEST', 'Guest');
+defined('ROLE_OWNER') OR define('ROLE_OWNER', 'Owner');
+
+
+/*
+|--------------------------------------------------------------------------
 | Display Debug backtrace
 |--------------------------------------------------------------------------
 |
