@@ -23,6 +23,7 @@ Release Date: 10.19.17
         - itemlist - displays lists on oneitem
         - oneitem - displays one row
         - oneitemx - displays editable row
+	- itemnav
         - itemadd - displays add entries button
     - others
         - N/A
@@ -30,11 +31,13 @@ Release Date: 10.19.17
 ##### Updated components
     - controllers
         - Mtce - Shows role on pagetitle
+               - Added pagination
                - Added framework for Adding/Editing entries
     - model     
         - N/A
     - view
         - _menubar - added role selector
+	- itemlist - added pagination tag
     - others
         - autoload - enabled sessions
         - config - Changed link routing for Maintenance
