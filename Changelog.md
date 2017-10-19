@@ -39,6 +39,16 @@ Release Date: 10.19.17
         - constants - Added application constants
         
 
+##### Bugfixes
+    - controllers
+        - N/A    
+    - model     
+        - N/A
+    - view
+        - Fixed bootstrap for
+    - others
+	- N/A
+
 ### Version 1.0 - GL, SM
 Release Date: 10.12.17
 
