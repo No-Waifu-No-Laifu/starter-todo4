@@ -23,8 +23,9 @@ Release Date: 10.19.17
         - itemlist - displays lists on oneitem
         - oneitem - displays one row
         - oneitemx - displays editable row
-	- itemnav
+	- itemnav - displays page navigation
         - itemadd - displays add entries button
+	- itemedit - displays items worked with
     - others
         - N/A
 
@@ -33,8 +34,9 @@ Release Date: 10.19.17
         - Mtce - Shows role on pagetitle
                - Added pagination
                - Added framework for Adding/Editing entries
+	       - Added add, edit, showit, submit cancel and delete functions
     - model     
-        - N/A
+        - Tasks - Added rules for validation
     - view
         - _menubar - added role selector
 	- itemlist - added pagination tag
@@ -43,17 +45,18 @@ Release Date: 10.19.17
         - config - Changed link routing for Maintenance
                  - Session path set
         - constants - Added application constants
+	- Memory_model - updated highest function
         
 
 ##### Bugfixes
     - controllers
         - N/A    
     - model     
-        - N/A
+        - App - fixed bugs required by step 10.0
     - view
         - Fixed bootstrap for
     - others
-	- N/A
+	- Fixed bugs for Memory_model $data to $record
 
 ### Version 1.0 - GL, SM
 Release Date: 10.12.17
