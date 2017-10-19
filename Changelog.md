@@ -29,16 +29,19 @@ Release Date: 10.19.17
 ##### Updated components
     - controllers
         - Mtce - Shows role on pagetitle, added pagination
+	- View - updated makePrioritizedPanel(), created complete()
     - model     
         - N/A
     - view
         - _menubar - added role selector
 	- itemlist - added pagination tag
+	- by_priority - added form tag
     - others
         - autoload - enabled sessions
         - config - Changed link routing for Maintenance
                  - Session path set
         - constants - Added application constants
+	- updated core/Memory_Model
         
 
 ##### Bugfixes
