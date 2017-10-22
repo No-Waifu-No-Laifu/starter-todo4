@@ -103,6 +103,7 @@ class Mtce extends Application {
     // Render the current DTO
     private function showit()
     {
+        $submitButtonLabel = 'Update the TODO task';
         $this->load->helper('form');
         $task = $this->session->userdata('task');
         $this->data['id'] = $task->id;
@@ -110,11 +111,20 @@ class Mtce extends Application {
         // if no errors, pass an empty message
         if ( ! isset($this->data['error']))
             $this->data['error'] = '';
+        
+        // Check to see if its new or editing
+        if (empty($task->id))
+        {
+            $submitButtonLabel = 'Create New TODO Task';
+        }
 
         $fields = array(
             'ftask'      => form_label('Task description') . form_input('task', $task->task),
             'fpriority'  => form_label('Priority') . form_dropdown('priority', $this->app->priority(), $task->priority),
-            'zsubmit'    => form_submit('submit', 'Update the TODO task'),
+            'fsize'  => form_label('Size') . form_dropdown('size', $this->app->size(), $task->size),
+            'fgroup'  => form_label('Group') . form_dropdown('group', $this->app->group(), $task->group),
+            'fstatus'  => form_label('Status') . form_dropdown('status', $this->app->status(), $task->status),
+            'zsubmit'    => form_submit('submit', $submitButtonLabel),
         );
         $this->data = array_merge($this->data, $fields);
 
