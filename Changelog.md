@@ -37,12 +37,14 @@ Release Date: 10.19.17
 	       - Added add, edit, showit, submit cancel and delete functions
 	       - View - updated makePrioritizedPanel() 
                - created complete()
+               - Showit() now also handles Size, Group and Status fields
     - model     
         - Tasks - Added rules for validation
     - view
         - _menubar - added role selector
-	      - itemlist - added pagination tag
-	      - by_priority - added form tag
+        - itemlist - added pagination tag
+        - by_priority - added form tag
+        - itemedit - added Size Group and Status form fields
     - others
         - autoload - enabled sessions
         - config - Changed link routing for Maintenance
