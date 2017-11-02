@@ -7,13 +7,11 @@
  */
 
 /**
- * Verifies that your task entity accepts property 
- * values that meet the form validation rules, 
- * and rejects ones that don't.
+ * Description of TaskListTest
  *
  * @author namblue
  */
- class TaskTest extends PHPUnit_Framework_TestCase
+ class TaskListTest extends PHPUnit_Framework_TestCase
   {
     private $CI;
     public function setUp()
@@ -21,10 +19,10 @@
       // Load CI instance normally
       $this->CI = &get_instance();
     }
-    public function testGetPost()
+    public function testTaskList()
     {
-      $_SERVER['REQUEST_METHOD'] = 'GET';
-      $_GET['foo'] = 'bar';
-      $this->assertEquals('bar', $this->CI->input->get_post('foo'));
+      $completed = count($this->CI->tasks->getCompletedTasks());
+      $uncompleted = count($this->CI->tasks->getCategorizedTasks());
+      $this->assertGreaterThan($completed, $uncompleted);
     }
   }

@@ -8,6 +8,18 @@
 Team conventions: Allman notation, markdown for changelog  
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
+## Version Log
+### Version 3.0 - GL, SM
+Release Date: 11.02.17
+
+##### New Components
+    - others
+        - Added PhpUnit testing to project
+        - Added build/test automation with Travis CI
+
+##### Updated components
+    - model     
+        - Tasks - Added getCompletedTasks
 
 ## Version Log
 ### Version 2.0 - GL, SM

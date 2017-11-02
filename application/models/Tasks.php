@@ -41,6 +41,29 @@ class Tasks extends CSV_Model {
             return $converted;
         }
         
+        function getCompletedTasks()
+        {
+            // extract the undone tasks
+            foreach ($this->all() as $task)
+            {
+                if ($task->status == 2)
+                    $done[] = $task;
+            }
+
+            // substitute the category name, for sorting
+            foreach ($done as $task)
+                $task->group = $this->app->group($task->group);
+
+            // order them by category
+            usort($done, "orderByCategory");
+
+            // convert the array of task objects into an array of associative objects       
+            foreach ($done as $task)
+                $converted[] = (array) $task;
+
+            return $converted;
+        }
+        
         // provide form validation rules
         public function rules()
         {
