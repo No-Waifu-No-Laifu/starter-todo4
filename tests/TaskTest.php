@@ -27,4 +27,31 @@
       $_GET['foo'] = 'bar';
       $this->assertEquals('bar', $this->CI->input->get_post('foo'));
     }
+    
+    public function testTaskEntity()
+    {
+        $taskSet = $this->CI->tasks->setTask('TaskName');
+        $sizeSet = $this->CI->tasks->setSize(2);
+        $prioritySet = $this->CI->tasks->setPriority(2);
+        $groupSet = $this->CI->tasks->setGroup(2);
+        
+        $this->assertTrue($taskSet);
+        $this->assertTrue($sizeSet);
+        $this->assertTrue($groupSet);
+        $this->assertTrue($prioritySet);
+    }
+    
+    public function testTaskEntityFailure()
+    {
+        $taskSet = $this->CI->tasks->setTask('');
+        $sizeSet = $this->CI->tasks->setSize(5);
+        $prioritySet = $this->CI->tasks->setPriority(5);
+        $groupSet = $this->CI->tasks->setGroup(6);
+        
+        $this->assertFalse($taskSet);
+        $this->assertFalse($sizeSet);
+        $this->assertFalse($groupSet);
+        $this->assertFalse($prioritySet);
+    }
+    
   }
