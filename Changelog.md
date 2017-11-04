@@ -16,10 +16,12 @@ Release Date: 11.02.17
     - others
         - Added PhpUnit testing to project
         - Added build/test automation with Travis CI
+	- Added TaskListTest
+	- Added TaskTest
 
 ##### Updated components
     - model     
-        - Tasks - Added getCompletedTasks
+        - Tasks - Added getCompletedTasks, setTask, setPriority, setSize, setGroup
 
 ## Version Log
 ### Version 2.0 - GL, SM
