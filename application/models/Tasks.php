@@ -89,7 +89,7 @@ class Tasks extends CSV_Model {
         
         public function setPriority($value)
         {
-            if (is_int($value) && $value < 5) {
+            if (is_int($value) && $value < 4) {
                 $this->priority = $value;
                 return true;
             }
@@ -99,7 +99,7 @@ class Tasks extends CSV_Model {
         
         public function setSize($value)
         {
-            if(is_int($value) && $value <5)
+            if(is_int($value) && $value < 4)
             {
                 $this->size = $value;
                 return true;
@@ -109,7 +109,7 @@ class Tasks extends CSV_Model {
         
         public function setGroup($value)
         {
-            if (is_int($value) && $value <6)
+            if (is_int($value) && $value < 5)
             {
                 $this->group = $value;
                 return true;
