@@ -30,10 +30,10 @@
     
     public function testTaskEntity()
     {
-        $taskSet = $this->CI->tasks->setTask('TaskName');
-        $sizeSet = $this->CI->tasks->setSize(2);
-        $prioritySet = $this->CI->tasks->setPriority(2);
-        $groupSet = $this->CI->tasks->setGroup(2);
+        $taskSet = $this->CI->task->setTask('TaskName');
+        $sizeSet = $this->CI->task->setSize(2);
+        $prioritySet = $this->CI->task->setPriority(2);
+        $groupSet = $this->CI->task->setGroup(2);
         
         $this->assertTrue($taskSet);
         $this->assertTrue($sizeSet);
@@ -43,10 +43,10 @@
     
     public function testTaskEntityFailure()
     {
-        $taskSet = $this->CI->tasks->setTask('');
-        $sizeSet = $this->CI->tasks->setSize(5);
-        $prioritySet = $this->CI->tasks->setPriority(5);
-        $groupSet = $this->CI->tasks->setGroup(6);
+        $taskSet = $this->CI->task->setTask('');
+        $sizeSet = $this->CI->task->setSize(5);
+        $prioritySet = $this->CI->task->setPriority(5);
+        $groupSet = $this->CI->task->setGroup(6);
         
         $this->assertFalse($taskSet);
         $this->assertFalse($sizeSet);

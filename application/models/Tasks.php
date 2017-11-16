@@ -11,111 +11,70 @@
  *
  * @author steve
  */
-class Tasks extends CSV_Model {
+class Tasks extends CSV_Model 
+{        
+    public function __construct()
+    {
+            parent::__construct(APPPATH . '../data/tasks.csv', 'id');
+    }
 
-        private $task, $priority, $size, $group;
-        
-        public function __construct()
+    function getCategorizedTasks()
+    {
+        // extract the undone tasks
+        foreach ($this->all() as $task)
         {
-                parent::__construct(APPPATH . '../data/tasks.csv', 'id');
+            if ($task->status != 2)
+                $undone[] = $task;
         }
 
-        function getCategorizedTasks()
+        // substitute the category name, for sorting
+        foreach ($undone as $task)
+            $task->group = $this->app->group($task->group);
+
+        // order them by category
+        usort($undone, "orderByCategory");
+
+        // convert the array of task objects into an array of associative objects       
+        foreach ($undone as $task)
+            $converted[] = (array) $task;
+
+        return $converted;
+    }
+
+    function getCompletedTasks()
+    {
+        // extract the undone tasks
+        foreach ($this->all() as $task)
         {
-            // extract the undone tasks
-            foreach ($this->all() as $task)
-            {
-                if ($task->status != 2)
-                    $undone[] = $task;
-            }
-
-            // substitute the category name, for sorting
-            foreach ($undone as $task)
-                $task->group = $this->app->group($task->group);
-
-            // order them by category
-            usort($undone, "orderByCategory");
-
-            // convert the array of task objects into an array of associative objects       
-            foreach ($undone as $task)
-                $converted[] = (array) $task;
-
-            return $converted;
+            if ($task->status == 2)
+                $done[] = $task;
         }
-        
-        function getCompletedTasks()
-        {
-            // extract the undone tasks
-            foreach ($this->all() as $task)
-            {
-                if ($task->status == 2)
-                    $done[] = $task;
-            }
 
-            // substitute the category name, for sorting
-            foreach ($done as $task)
-                $task->group = $this->app->group($task->group);
+        // substitute the category name, for sorting
+        foreach ($done as $task)
+            $task->group = $this->app->group($task->group);
 
-            // order them by category
-            usort($done, "orderByCategory");
+        // order them by category
+        usort($done, "orderByCategory");
 
-            // convert the array of task objects into an array of associative objects       
-            foreach ($done as $task)
-                $converted[] = (array) $task;
+        // convert the array of task objects into an array of associative objects       
+        foreach ($done as $task)
+            $converted[] = (array) $task;
 
-            return $converted;
-        }
-        
-        // provide form validation rules
-        public function rules()
-        {
-            $config = array(
-            ['field' => 'task', 'label' => 'TODO task', 'rules' => 'alpha_numeric_spaces|max_length[64]'],
-            ['field' => 'priority', 'label' => 'Priority', 'rules' => 'integer|less_than[4]'],
-            ['field' => 'size', 'label' => 'Task size', 'rules' => 'integer|less_than[4]'],
-            ['field' => 'group', 'label' => 'Task group', 'rules' => 'integer|less_than[5]'],
-            );
-            return $config;
-        }
-        
-        public function setTask($value)
-        {
-            if (preg_match('/^[A-Z0-9]+$/i', $value) && strlen($value) <= 64) {
-                $this->task = $value;
-                return true;
-            }
-            return false;
-        }
-        
-        public function setPriority($value)
-        {
-            if (is_int($value) && $value < 4) {
-                $this->priority = $value;
-                return true;
-            }
-            
-            return false;
-        }
-        
-        public function setSize($value)
-        {
-            if(is_int($value) && $value < 4)
-            {
-                $this->size = $value;
-                return true;
-            }
-            return false;
-        }
-        
-        public function setGroup($value)
-        {
-            if (is_int($value) && $value < 5)
-            {
-                $this->group = $value;
-                return true;
-            }
-            return false;
-        }
+        return $converted;
+    }
+
+    // provide form validation rules
+    public function rules()
+    {
+        $config = array(
+        ['field' => 'task', 'label' => 'TODO task', 'rules' => 'alpha_numeric_spaces|max_length[64]'],
+        ['field' => 'priority', 'label' => 'Priority', 'rules' => 'integer|less_than[4]'],
+        ['field' => 'size', 'label' => 'Task size', 'rules' => 'integer|less_than[4]'],
+        ['field' => 'group', 'label' => 'Task group', 'rules' => 'integer|less_than[5]'],
+        );
+        return $config;
+    }
 }
 
 // return -1, 0, or 1 of $a's category name is earlier, equal to, or later than $b's

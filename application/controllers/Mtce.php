@@ -142,6 +142,7 @@ class Mtce extends Application {
         // retrieve & update data transfer buffer
         $task = (array) $this->session->userdata('task');
         $task = array_merge($task, $this->input->post());
+        unset($task['submit']);
         $task = (object) $task;  // convert back to object
         $this->session->set_userdata('task', (object) $task);
 
