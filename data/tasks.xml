@@ -23,7 +23,7 @@ and open the template in the editor.
         <priority>2</priority>
         <size>2</size>
         <group>1</group>
-        <deadline></deadline>
+        <deadline>20170219</deadline>
         <status>2</status>
         <flag>0</flag>
     </task>
@@ -33,7 +33,7 @@ and open the template in the editor.
         <priority>2</priority>
         <size>2</size>
         <group>1</group>
-        <deadline></deadline>
+        <deadline>20170219</deadline>
         <status>1</status>
         <flag>0</flag>
     </task>
@@ -43,7 +43,7 @@ and open the template in the editor.
         <priority>1</priority>
         <size>2</size>
         <group>1</group>
-        <deadline></deadline>
+        <deadline>20170219</deadline>
         <status>1</status>
         <flag>0</flag>
     </task>
@@ -53,7 +53,7 @@ and open the template in the editor.
         <priority>1</priority>
         <size>2</size>
         <group>4</group>
-        <deadline></deadline>
+        <deadline>20170219</deadline>
         <status>2</status>
         <flag>0</flag>
     </task>
@@ -73,7 +73,7 @@ and open the template in the editor.
         <priority>2</priority>
         <size>1</size>
         <group>3</group>
-        <deadline></deadline>
+        <deadline>20170219</deadline>
         <status>1</status>
         <flag>0</flag>
     </task>
