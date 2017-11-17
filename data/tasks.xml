@@ -15,7 +15,6 @@ and open the template in the editor.
         <group>3</group>
         <deadline>20170219</deadline>
         <status>2</status>
-        <flag>1</flag>
     </task>
     <task>
         <id>2</id>
@@ -25,17 +24,15 @@ and open the template in the editor.
         <group>1</group>
         <deadline></deadline>
         <status>2</status>
-        <flag>1</flag>
     </task>
     <task>
-        <id>3></id>
+        <id>3</id>
         <task>Wash the car</task>
         <priority>2</priority>
         <size>2</size>
         <group>1</group>
         <deadline></deadline>
         <status>1</status>
-        <flag>1</flag>
     </task>
     <task>
         <id>4</id>
@@ -45,7 +42,6 @@ and open the template in the editor.
         <group>1</group>
         <deadline></deadline>
         <status>1</status>
-        <flag>1</flag>
     </task>
     <task>
         <id>5</id>
@@ -55,7 +51,6 @@ and open the template in the editor.
         <group>4</group>
         <deadline></deadline>
         <status>2</status>
-        <flag>1</flag>
     </task>
     <task>
         <id>6</id>
@@ -65,7 +60,6 @@ and open the template in the editor.
         <group>4</group>
         <deadline>20170305</deadline>
         <status>1</status>
-        <flag>1</flag>
     </task>
     <task>
         <id>7</id>
@@ -75,6 +69,5 @@ and open the template in the editor.
         <group>3</group>
         <deadline></deadline>
         <status>1</status>
-        <flag>1</flag>
     </task>
 </tasks>
