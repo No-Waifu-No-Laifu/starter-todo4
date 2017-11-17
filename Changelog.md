@@ -14,6 +14,18 @@ Release Date: 11.02.17
 
 ##### New Components
     - others
+        - Added tasks.xml
+	- Added XML_Model.php
+
+##### Comments
+	- Stored data is now in xml now instead of csv
+
+## Version Log
+### Version 3.0 - GL, SM
+Release Date: 11.02.17
+
+##### New Components
+    - others
         - Added PhpUnit testing to project
         - Added build/test automation with Travis CI
 	- Added TaskListTest
