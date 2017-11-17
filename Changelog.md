@@ -9,7 +9,7 @@ Team conventions: Allman notation, markdown for changelog
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
 ## Version Log
-### Version 3.0 - GL, SM
+### Version 4.0 - GL, SM
 Release Date: 11.02.17
 
 ##### New Components
