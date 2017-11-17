@@ -25,6 +25,7 @@ and open the template in the editor.
         <group>1</group>
         <deadline>20170219</deadline>
         <status>2</status>
+        <flag>0</flag>
     </task>
     <task>
         <id>3</id>
